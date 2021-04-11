@@ -526,22 +526,22 @@ def address_combo_func(data):
     address_data=['p2pkh','p2sh','p2wpkh-p2sh','p2wpkh','p2wsh','bip44','bip49', 'bip84', 'bip141']
     selection=address_data[data]
     if selection=='bip44':
-        ui.derivationpath_box.setDisabled(True)
+        ui.derivationpath_box.setDisabled(false)
         ui.derivationpath_box.setText("m/44'/0'/0'/0")
-        ui.hardened_checkbox.setDisabled(True)
+        ui.hardened_checkbox.setDisabled(false)
         ui.hardened_checkbox.setChecked(False)
     elif selection=='bip49':
-        ui.derivationpath_box.setDisabled(True)
+        ui.derivationpath_box.setDisabled(false)
         ui.derivationpath_box.setText("m/49'/0'/0'/0")
-        ui.hardened_checkbox.setDisabled(True)
+        ui.hardened_checkbox.setDisabled(false)
         ui.hardened_checkbox.setChecked(False)
     elif selection=='bip84':
-        ui.derivationpath_box.setDisabled(True)
+        ui.derivationpath_box.setDisabled(false)
         ui.derivationpath_box.setText("m/84'/0'/0'/0")
-        ui.hardened_checkbox.setDisabled(True)
+        ui.hardened_checkbox.setDisabled(false)
         ui.hardened_checkbox.setChecked(False)
     elif selection=='bip141':
-        ui.hardened_checkbox.setDisabled(True)
+        ui.hardened_checkbox.setDisabled(false)
         ui.hardened_checkbox.setChecked(False)
     else:
         ui.derivationpath_box.setDisabled(False)
